@@ -4,10 +4,12 @@ import { LuSettings } from "react-icons/lu";
 
 const Services = () => {
  const Data = [
-  { Title: "Strategic marketing" },
-  { Title: "Investment Planning" },
-  { Title: "Insights & analytics" },
-  { Title: "Business consulting" }
+  { Title: "Strategic marketing" ,
+    image:'./Customer01.jpg',
+  },
+  { Title: "Investment Planning" ,image:'./Investment.jpg',},
+  { Title: "Insights & analytics" ,image:'./Analytics.jpg',},
+  { Title: "Business consulting", image:'./Business-01.jpg',}
 ];
 
   return (
@@ -26,13 +28,13 @@ const Services = () => {
 
         {/* Card Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {[1, 2, 3, 4].map((_, index) => (
+          {Data.map((item, index) => (
             <div
               key={index}
               className="w-[300px] bg-white rounded-2xl shadow-2xl font-medium relative"
             >
               <img
-                src="./Customer01.jpg"
+                src={item.image}
                 className="w-full h-[200px] object-cover rounded-t-2xl rounded-bl-[100px]"
                 alt="Service"
               />
@@ -40,7 +42,7 @@ const Services = () => {
               <LuSettings className="absolute bg-gray-200 border-4 border-white p-4 text-6xl sm:text-7xl rounded-full text-blue-950 left-5 top-36" />
 
               <div className="px-4 py-5 space-y-3">
-                <p className="text-xl sm:text-2xl">Strategic marketing</p>
+                <p className="text-xl sm:text-2xl">{item.Title}</p>
                 <p className="text-sm text-gray-600">
                   Morem ipsum dolor sittemet consectetur adipiscing.
                 </p>

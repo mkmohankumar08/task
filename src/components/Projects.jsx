@@ -23,10 +23,10 @@ const Projects = () => {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full"
         >
           {[
-            { title: "Business Consulting", subtitle: "Business Strategy" },
-            { title: "Digital Agency", subtitle: "Business Services" },
-            { title: "Inventory Management", subtitle: "Inventory Tracking" },
-            { title: "Business Accounting", subtitle: "Financing Management" },
+            { title: "Business Consulting", subtitle: "Business Strategy" ,image:"./Project-01.jpg"},
+            { title: "Digital Agency", subtitle: "Business Services" ,image:"./Project-02.jpg"},
+            { title: "Inventory Management", subtitle: "Inventory Tracking" ,image:"./Project-03.jpg"},
+            { title: "Business Accounting", subtitle: "Financing Management",image:"./Project-04.jpg" },
           ].map((item, index) => (
             <div
               key={index}
@@ -39,7 +39,7 @@ const Projects = () => {
               /> */}
               <div className="relative group rounded-t-2xl rounded-bl-[100px] overflow-hidden">
     <img
-      src="./Customer01.jpg"
+      src={item.image}
       alt={item.title}
       className="w-full h-52 sm:h-60 object-cover transition-transform duration-300 group-hover:scale-105"
     />
