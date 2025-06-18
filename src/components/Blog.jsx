@@ -7,7 +7,7 @@ const Blog = () => {
       title: "Marketing your business during a downturn",
       author: "Doman Smith",
       date: "Oct 21, 2024",
-      image: "./project-01.jpg",
+      image: "./Project-01.jpg",
       avatar: "./insta1.jpg",
     },
     {
@@ -21,7 +21,7 @@ const Blog = () => {
       title: "How branding builds customer trust",
       author: "Doman Smith",
       date: "Oct 21, 2024",
-      image: "./project-03.jpg",
+      image: "./Project-03.jpg",
       avatar: "./insta1.jpg",
     },
   ];
