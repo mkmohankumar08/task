@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.bg-hero {
+  background-image: url('/Homebg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.bg-hero1 {
+  background-image: url('/co-workers.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+@layer utilities {
+  @keyframes rotate-animation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .animate-rotate-circle {
+    animation: rotate-animation 8s linear infinite;
+  }
+}
+
+

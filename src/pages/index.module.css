@@ -1,0 +1,25 @@
+.circle {
+  position: relative;
+  border-radius: 50%;
+  animation: rotate-animation 8s linear infinite;
+  transform-origin: center center;
+  margin: 0 auto;
+}
+
+.circle span {
+  position: absolute;
+  transform-origin: 0 0;
+  white-space: pre;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
