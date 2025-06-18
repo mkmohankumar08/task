@@ -4,7 +4,7 @@ import { FaArrowRight, FaCalendarAlt } from "react-icons/fa";
 const Blog = () => {
   const blogs = [
     {
-      title: "Marketing your business during a downturn",
+      title: "Marketing your business during a downturn" ,
       author: "Doman Smith",
       date: "Oct 21, 2024",
       image: "./Project-01.jpg",
