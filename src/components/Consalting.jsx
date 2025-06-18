@@ -5,7 +5,7 @@ import { FaChartPie, FaChartBar } from 'react-icons/fa';
 
 export default function Consulting() {
   return (
-    <section className="bg-[#151875] text-white py-16 px-6 lg:px-20 relative overflow-hidden h-screen flex">
+    <section className="bg-[#151875] text-white py-16 px-6 lg:px-20 relative overflow-hidden md:h-screen flex">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
 
         {/* Left Content */}
